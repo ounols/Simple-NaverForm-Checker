@@ -41,7 +41,7 @@ def insertForm(driver, index, value):
         answer = form_raw.find_element_by_id('answer')
         answer.send_keys(value)
 
-    print("[" + index + "] type = " + type + ", value = " + value)
+    print("[" + str(index) + "] type = " + type + ", value = " + str(value))
 
 
 def submit(driver):
