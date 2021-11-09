@@ -41,8 +41,7 @@ if __name__ == '__main__':
     time.sleep(2)
     naver_form.submit(driver)
     time.sleep(2)
-    if naver_form.isSubmit(driver):
-        print("success")
+    print(naver_form.isSubmit(driver))
 
     naver_form.close(driver)
 

@@ -41,16 +41,18 @@ def insertForm(driver, index, value):
         answer = form_raw.find_element_by_id('answer')
         answer.send_keys(value)
 
-    print("type = " + type)
+    print("[" + index + "] type = " + type + ", value = " + value)
 
 
 def submit(driver):
+    print("제출하기")
     submit_raw = driver.find_element_by_css_selector("button[menu='submitBtn']")
     driver.execute_script("arguments[0].scrollIntoView();", submit_raw)
     submit_raw.click()
 
+
 def isSubmit(driver):
-    return driver.find_element_by_class_name('finishMessage') == "소중한 의견 감사합니다."
+    return driver.find_element_by_class_name('finishMessage')
 
 
 def close(driver):
