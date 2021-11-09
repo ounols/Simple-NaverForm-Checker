@@ -52,7 +52,7 @@ def submit(driver):
 
 
 def isSubmit(driver):
-    return driver.find_element_by_class_name('finishMessage')
+    return driver.find_element_by_class_name('finishMessage').get_attribute("textContent")
 
 
 def close(driver):
