@@ -22,7 +22,6 @@ def getDriver(url):
     driver.maximize_window()
 
     time.sleep(2)
-    print(driver.page_source)
 
     return driver
 
