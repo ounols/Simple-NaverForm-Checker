@@ -9,8 +9,12 @@
 name: Upload Python Package
 
 on:
-  schedule:
-     - cron: '52 14 * * *'
+  push:
+    branches:
+      - unknown
+  
+#   schedule:
+#      - cron: '52 14 * * *'
 
 jobs:
   build:
