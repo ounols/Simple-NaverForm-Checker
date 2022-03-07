@@ -13,8 +13,10 @@ on:
     branches:
       - unknown
   
-#   schedule:
-#      - cron: '52 14 * * *'
+  schedule:
+     - cron: '52 14 * * *'
+     
+  workflow_dispatch:
 
 jobs:
   build:
