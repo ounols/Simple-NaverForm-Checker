@@ -27,7 +27,7 @@ def getDriver(url):
 
 
 def insertForm(driver, index, value):
-    form_raw = driver.find_element_by_id('formItem_' + str(index))
+    form_raw = driver.find_element_by_css_selector("div[qid='" + str(index) + "']")
     type = form_raw.get_attribute("class")
     driver.execute_script("arguments[0].scrollIntoView();", form_raw)
 
