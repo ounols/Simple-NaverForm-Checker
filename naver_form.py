@@ -38,7 +38,7 @@ def insertForm(driver, index, value):
         form_raw.find_element_by_css_selector("div[value='" + str(value) + "']").find_element_by_class_name(
             "radio").click()
     elif type == 'formItemPh paragraph':
-        answer = form_raw.find_element_by_id('answer')
+        answer = form_raw.find_element_by_css_selector("textarea[name='answer']")
         answer.send_keys(value)
 
     print("[" + str(index) + "] type = " + type + ", value = " + str(value))
