@@ -54,6 +54,7 @@ jobs:
         echo "$GHTLF" >> info.txt
         echo "$GKRQJS" >> info.txt
         echo "$DLFMA" >> info.txt
+        echo "$DLDB" >> info.txt
         
     - run: tree
       
