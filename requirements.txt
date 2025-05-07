@@ -3,7 +3,7 @@ attrs==21.2.0
 certifi==2021.10.8
 cffi==1.15.0
 cryptography==35.0.0
-h11==0.12.0
+h11==0.16.0
 idna==3.3
 outcome==1.1.0
 pycparser==2.21
